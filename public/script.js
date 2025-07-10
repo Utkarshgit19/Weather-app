@@ -1,0 +1,13 @@
+console.log("hello");
+document.getElementById('coord-mode-btn').addEventListener('click',function(){
+    $("#city").addClass("hidden");
+    $("#latlon").removeClass("hidden");
+    $("#coord-mode-btn").addClass("active");
+    $("#city-mode-btn").removeClass("active");
+});
+document.getElementById('city-mode-btn').addEventListener('click',function(){
+    $("#city").removeClass("hidden");
+    $("#latlon").addClass("hidden");
+    $("#coord-mode-btn").removeClass("active");
+    $("#city-mode-btn").addClass("active");
+});

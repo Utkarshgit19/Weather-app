@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="title">🌤️ Weather App</h1>
+
+    <div class="search-toggle">
+      <button id="city-mode-btn" class="active">City</button>
+      <button id="coord-mode-btn">Lat/Lon</button>
+    </div>
+
+    <div class="search-box" id="city">
+      <!-- <input type="text" placeholder="Enter city name" id="city-input" />
+      <button id="search-btn">Get Weather</button> -->
+      <form action="/submit1" method="POST" >
+        <input type="text" placeholder="Enter city name" id="city-input" name="city" />
+        <button type="submit" id="search-btn">Go</button>
+      </form>
+    </div>
+
+
+    <div class="search-box hidden" id="latlon">
+      <form action="/submit2" method="POST">
+          <div class="inner">
+            <input type="text" placeholder="Latitude" id="city-input" class="lat" name="lat"/>
+            <input type="text" placeholder="Longitude" class="lon" name="lon"/>
+          </div>
+        <button type="submit" id="search-btn" class="btn-latlon">Go</button>
+      </form>
+    </div>
+
+    <div class="weather-card">
+      <h2 id="location">📍 <%=city%>, <%=country%> </h2>
+
+      <div class="weather-info">
+        <h3 id="temp"><%=temp%>°C</h3>
+        <p id="desc"><%=weather%></p>
+        <p id="humidity">💧 Humidity: <%=humidity%>%</p>
+        <p id="wind">💨 Wind: <%=wind%> Km/h</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script src="/script.js"></script>
+</body>
+
+</html>

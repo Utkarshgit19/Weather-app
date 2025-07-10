@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #5ba3c2;
+background: linear-gradient(316deg, rgba(91, 163, 194, 1) 0%, rgba(97, 131, 232, 1) 48%, rgba(51, 122, 255, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #333;
+}
+.search-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.search-toggle button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.search-box button {
+  padding: 10px 16px;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#latlon form{
+  display: flex;
+  align-items: center;
+}
+#latlon form .lat{
+  margin-bottom: 4px;
+}
+#latlon form .lon{
+  margin-top: 4px;
+}
+.search-box button.btn-latlon{
+  height: 40px;
+}
+.search-box button:hover {
+  background-color: #0d76d9;
+}
+
+.weather-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.weather-card h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.weather-info h3 {
+  font-size: 36px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.weather-info p {
+  font-size: 16px;
+  margin: 6px 0;
+}
+.weather-info #desc{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hidden{
+  display: none;
+}
+.search-toggle .active{
+  color: white;
+  background-color: #1e90ff;
+}
