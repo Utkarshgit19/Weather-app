@@ -7,7 +7,7 @@ It allows users to search current weather conditions either by entering a **city
 
 ## 🚀 Live Demo
 
-👉 [Click here to visit the live site](https://your-deployment-link.com)
+👉 [Click here to visit the live site]([https://your-deployment-link.com](https://weather-app-u7wy.onrender.com))
 
 ---
 
