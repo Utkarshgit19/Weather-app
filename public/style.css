@@ -123,3 +123,12 @@ background: linear-gradient(316deg, rgba(91, 163, 194, 1) 0%, rgba(97, 131, 232,
   color: white;
   background-color: #1e90ff;
 }
+@media (max-width: 371px) {
+  /* Example: Make container full width */
+  input#city-input{
+    width: 150px;
+  }
+  #latlon .inner input{
+    width: 150px;
+  }
+}
